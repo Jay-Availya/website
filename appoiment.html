@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHARMACY</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="asstes/img/Group 447.png" type="image/x-icon">
+
+    <!-- fonts css  -->
+    <link rel="stylesheet" href="asstes/css/fonts.css">
+
+    <!-- icon   -->
+    <link rel="stylesheet" href="asstes/css/all.min.css">
+
+    <!-- bootstarp link  -->
+    <link rel="stylesheet" href="asstes/css/bootstrap.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="asstes/css/style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- header  -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="asstes/img/Group 234.png" class="img-fluid" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 " href="doctor.html">DOCTOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 active text-primary" href="appoiment.html">APPOINTMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="pharmacy.html">PHARMACY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="#" class="ms-3">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <a href="#" class="ms-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="ms-3">
+                    <img src="asstes/img/Ellipse 3.png" alt="">
+                </a>
+                <a href="#togglemenu" class="ms-3 d-lg-none" data-bs-toggle="offcanvas">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="togglemenu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <a href="#">
+                    <img src="asstes/img/Group 234.png" alt="">
+                </a>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link mx-4 active text-primary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="doctor.html">DOCTOR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="appoiment.html">APPOINTMENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="pharmacy.html">PHARMACY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header  -->
+
+    <!-- banner start  -->
+    <div class="slider text-white" style="background-image: url('asstes/img/Group\ 463.png'); padding: 200px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="slider-content text-center">
+                    <h2 style="font-size: 28px;">Doctors team</h2>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-7">
+                            <p style="font-size: 20px;">Great doctor if you need your family member to get effective
+                                immediate assistance,
+                                emergency treatment or a simple consultation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end  -->
+
+    <!-- nav tabs  -->
+     <section style="margin: 100px 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active bg-transparent text-primary" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Online Appointment</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Clinic Appointment</button>
+                        </li>
+                        
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="form">
+                                <form action="" class="d-flex flex-wrap">
+                                    <div class="col-12 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 pe-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 ps-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 pe-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 ps-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 pe-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 ps-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-12 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 100px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <button class="w-100 bg-transparent text-primaey" style="border: 1px solid blue; border-radius: 5px; height: 50px;">Book an Appointment</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="form">
+                                <form action="" class="d-flex flex-wrap">
+                                    <div class="col-12 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 pe-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 ps-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 pe-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 ps-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 pe-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-6 ps-2 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 40px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <div class="col-12 my-3">
+                                        <label class="d-block" for="">Patient Name*</label>
+                                        <input type="text" class="w-100 px-3 mt-3" style="height: 100px; border: 1px solid gray; border-radius: 5px;" placeholder="Patient Name">
+                                    </div>
+                                    <button class="w-100 bg-transparent text-primaey" style="border: 1px solid blue; border-radius: 5px; height: 50px;">Book an Appointment</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- nav tabs  -->
+
+    <!-- table  -->
+     <section style="margin: 100px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table" style="width: 1200px;">
+                      <thead>
+                        <tr>
+                            <th >
+                                Time Table
+                            </th>
+                            <th >
+                                09:00 AM
+                            </th>
+                            <th >
+                                11:00 AM
+                            </th>
+                            <th>
+                                02:00 PM
+                            </th>
+                            <th >
+                                04:00 PM
+                            </th>
+                            <th >
+                                06:00 PM
+                            </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>
+                                Mon
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="asstes/img/doctor.jfif" style="width: 73px;" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size: 14px;">Bella Castillo</h2>
+                                        <p style="font-size: 12px;">Radiologist</p>
+                                    </div>
+                                </div>
+                                <button class="border-0 p-2 mt-2">09:00 - 10:00 AM</button>
+                            </td>
+                            <td>
+                                11:00 AM
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="asstes/img/doctor.jfif" style="width: 73px;" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size: 14px;">Bella Castillo</h2>
+                                        <p style="font-size: 12px;">Radiologist</p>
+                                    </div>
+                                </div>
+                                <button class="border-0 p-2 mt-2">09:00 - 10:00 AM</button>
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="asstes/img/doctor.jfif" style="width: 73px;" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size: 14px;">Bella Castillo</h2>
+                                        <p style="font-size: 12px;">Radiologist</p>
+                                    </div>
+                                </div>
+                                <button class="border-0 p-2 mt-2">09:00 - 10:00 AM</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mon
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="asstes/img/doctor.jfif" style="width: 73px;" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size: 14px;">Bella Castillo</h2>
+                                        <p style="font-size: 12px;">Radiologist</p>
+                                    </div>
+                                </div>
+                                <button class="border-0 p-2 mt-2">09:00 - 10:00 AM</button>
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="col-6">
+                                        <img src="asstes/img/doctor.jfif" style="width: 73px;" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <h2 style="font-size: 14px;">Bella Castillo</h2>
+                                        <p style="font-size: 12px;">Radiologist</p>
+                                    </div>
+                                </div>
+                                <button class="border-0 p-2 mt-2">09:00 - 10:00 AM</button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+     </section>
+    <!-- table  -->
+
+    <section>
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="p-3">
+                    <div class="Categories position-relative overflow-hidden" style="border-radius: 10px;">
+                        <div class="categires-img">
+                            <img src="asstes/img/4954186c25ed9cad4d3c32936481a8d5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="categires-content position-absolute" style="z-index: 1; top: 20px; left: 20px;">
+                            <h2>Skin</h2>
+                            <p>Care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="Categories position-relative overflow-hidden" style="border-radius: 10px;">
+                        <div class="categires-img">
+                            <img src="asstes/img/4954186c25ed9cad4d3c32936481a8d5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="categires-content position-absolute" style="z-index: 1; top: 20px; left: 20px;">
+                            <h2>Skin</h2>
+                            <p>Care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="Categories position-relative overflow-hidden" style="border-radius: 10px;">
+                        <div class="categires-img">
+                            <img src="asstes/img/4954186c25ed9cad4d3c32936481a8d5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="categires-content position-absolute" style="z-index: 1; top: 20px; left: 20px;">
+                            <h2>Skin</h2>
+                            <p>Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="py-5 text-white" style="background-color: #202942;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="p-3">
+                    <a href="#">
+                        <img src="asstes/img/Group 233.png" alt="">
+                    </a>
+                    <p class="text-secondary mt-3" style="font-size: 15px;">Great doctor if you need your
+                        family member to get effective
+                        immediate assistance, emergency
+                        treatment or a simple consultation.</p>
+                </div>
+                <div class="p-3">
+                    <h2 style="font-size: 20px;" class="mb-4">Company</h2>
+                    <ul style="font-size: 11px;">
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">About Us</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Services</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"> Team</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Project</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Blog</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h2 style="font-size: 20px;" class="mb-4">Company</h2>
+                    <ul style="font-size: 11px;">
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">About Us</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Services</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"> Team</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Project</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Blog</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h2 style="font-size: 20px;" class="mb-4">Contact us</h2>
+                    <ul style="font-size: 11px;">
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-regular fa-envelope me-2"></i>
+                                lifecare@gmail.com</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-phone me-2"></i> +152
+                                534-468-854</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"> <i class="fa-solid fa-phone me-2"></i> +152
+                                534-468-854</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-location-dot me-2"></i> View on
+                                Google map</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-3" style="border-top: 2px solid rgb(116, 116, 116);">
+                <ul class="d-flex justify-content-end">
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+
+
+
+    <script src="asstes/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

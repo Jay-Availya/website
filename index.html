@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Care</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="asstes/img/Group 447.png" type="image/x-icon">
+
+    <!-- fonts css  -->
+    <link rel="stylesheet" href="asstes/css/fonts.css">
+
+    <!-- icon   -->
+    <link rel="stylesheet" href="asstes/css/all.min.css">
+
+    <!-- bootstarp link  -->
+    <link rel="stylesheet" href="asstes/css/bootstrap.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="asstes/css/style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- header  -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="asstes/img/Group 234.png" class="img-fluid" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 active text-primary" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="doctor.html">DOCTOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="appoiment.html">APPOINTMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="pharmacy.html">PHARMACY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="#" class="ms-3">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <a href="#" class="ms-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="ms-3">
+                    <img src="asstes/img/Ellipse 3.png" alt="">
+                </a>
+                <a href="#togglemenu" class="ms-3 d-lg-none" data-bs-toggle="offcanvas">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="togglemenu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <a href="#">
+                    <img src="asstes/img/Group 234.png" alt="">
+                </a>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 active text-primary" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="doctor.html">DOCTOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="appoiment.html">APPOINTMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="pharmacy.html">PHARMACY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!-- header  -->
+
+    <!-- banner start  -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner-content text-center text-white d-flex flex-column align-items-center">
+                    <h1 style="font-size: 52px;" class="fw-bold">Booking Your Appointment</h1>
+                    <div class="col-12 col-lg-7 my-2">
+                        <p style="font-size: 20px;">Great doctor if you need your family member to get effective
+                            immediate
+                            assistance, emergency treatment or a simple consultation.</p>
+                    </div>
+                    <div class="p-3 px-4 w-75" style="background-color: rgba(255, 255, 255, 0.413);">
+                        <form action="" class="d-flex flex-wrap align-items-center">
+                            <div class="col-12 col-lg-5 my-2 px-2 position-relative">
+                                <i class="fa-solid fa-location-dot position-absolute top-50 translate-middle text-secondary"
+                                    style="left: 25px;"></i>
+                                <input type="text" placeholder="Location">
+                            </div>
+                            <div class="col-12 col-lg-5 my-2 px-2 position-relative">
+                                <i class="fa-solid fa-stethoscope position-absolute position-absolute top-50 translate-middle text-secondary"
+                                    style="left: 25px;"></i>
+                                <input type="text" placeholder="Doctor Name">
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-primary btn-lg py-1 px-4">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner end  -->
+
+    <!-- services  -->
+    <section style="padding: 75px 0; background-color: #d9d9d978;">
+        <div class="container">
+            <div class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="p-2">
+                    <div class="service px-lg-5 d-flex">
+                        <div class="col-2">
+                            <div class="service-img">
+                                <img src="asstes/img/briefcase 1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-10 px-lg-3">
+                            <div class="service-content">
+                                <h2 style="font-size: 20px;" class="fw-bold">Our Mission</h2>
+                                <p style="font-size: 16px; color: #8492A6;">A doctor's mission is to
+                                    provide medical care, offer
+                                    diagnoses, and treat
+                                    illnesses to improve
+                                    the health and well-being
+                                    of their patients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="service px-lg-5 d-flex">
+                        <div class="col-2">
+                            <div class="service-img">
+                                <img src="asstes/img/briefcase 1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-10 px-lg-3">
+                            <div class="service-content">
+                                <h2 style="font-size: 20px;" class="fw-bold">Our Mission</h2>
+                                <p style="font-size: 16px; color: #8492A6;">A doctor's mission is to
+                                    provide medical care, offer
+                                    diagnoses, and treat
+                                    illnesses to improve
+                                    the health and well-being
+                                    of their patients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="service px-lg-5 d-flex">
+                        <div class="col-2">
+                            <div class="service-img">
+                                <img src="asstes/img/briefcase 1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-10 px-lg-3">
+                            <div class="service-content">
+                                <h2 style="font-size: 20px;" class="fw-bold">Our Mission</h2>
+                                <p style="font-size: 16px; color: #8492A6;">A doctor's mission is to
+                                    provide medical care, offer
+                                    diagnoses, and treat
+                                    illnesses to improve
+                                    the health and well-being
+                                    of their patients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- services  -->
+
+
+    <!-- Our Medical Services  -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center my-5">
+                    <span style="font-size: 11px; letter-spacing: 2px; background-color: rgba(0, 0, 255, 0.098);"
+                        class="text-primary fw-bold px-4 py-2 d-inline-block rounded-pill">Departments</span>
+                    <h2 style=" font-size: 28px;" class="fw-bold my-3">Our Medical Services</h2>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-12 col-lg-6">
+                            <p class="text-secondary" style="font-size: 16px;">Great doctor if you need your family
+                                member to get effective immediate assistance,
+                                emergency treatment or a simple consultation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="serv p-3">
+                        <img src="asstes/img/Group 456.png" alt="">
+                        <h3 style="font-size: 20px;" class="text-dark fw-bold my-3">Eye Care</h3>
+                        <p style="font-size: 16px;" class="text-secondary">Eye care is the crucial practice of
+                            maintaining and preserving the
+                            health and function of our eyes.
+                            Regular eye examinations,...</p>
+                        <a href="#" style="font-size: 14px;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Medical Services  -->
+
+    <!-- Our Best Doctors Team -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="title py-5 text-center fw-bold">
+                    <h2 style=" font-size: 28px;">Our Best Doctors Team </h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+                <div class="p-2">
+                    <div class="card p-3 rounded rounded-4">
+                        <img src="asstes/img/1000007032_x4_fast 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="font-size: 20px;" class="fw-bold">Calvin Carlo</h5>
+                            <p class="card-text text-secondary mb-0">Eye Care</p>
+                            <img src="asstes/img/Group 44.png" width="100" class="img-fluid" alt="">
+                            <ul class="my-2 text-secondary" style="font-size: 14px;">
+                                <li class="mb-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                                <li class="mb-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                            </ul>
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="card p-3 rounded rounded-4">
+                        <img src="asstes/img/1000007032_x4_fast 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="font-size: 20px;" class="fw-bold">Calvin Carlo</h5>
+                            <p class="card-text text-secondary mb-0">Eye Care</p>
+                            <img src="asstes/img/Group 44.png" width="100" class="img-fluid" alt="">
+                            <ul class="my-2 text-secondary" style="font-size: 14px;">
+                                <li class="mb-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                                <li class="mb-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                            </ul>
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="card p-3 rounded rounded-4">
+                        <img src="asstes/img/1000007032_x4_fast 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="font-size: 20px;" class="fw-bold">Calvin Carlo</h5>
+                            <p class="card-text text-secondary mb-0">Eye Care</p>
+                            <img src="asstes/img/Group 44.png" width="100" class="img-fluid" alt="">
+                            <ul class="my-2 text-secondary" style="font-size: 14px;">
+                                <li class="mb-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                                <li class="mb-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    63, PG Shustoke, UK
+                                </li>
+                            </ul>
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                            <img src="asstes/img/Group 45.png" class="mt-3" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Best Doctors Team -->
+
+    <!-- gallery  -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="title py-5 text-center fw-bold">
+                    <h2 style=" font-size: 28px;">Gallery of Our Hospital</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                <div class="p-2">
+                    <div class="gallery">
+                        <img src="asstes/img/h1-img-1 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="gallery">
+                        <img src="asstes/img/h1-img-2 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="gallery">
+                        <img src="asstes/img/h1-img-3 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="gallery">
+                        <img src="asstes/img/h1-img-4 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="gallery">
+                        <img src="asstes/img/h1-img-5 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="gallery">
+                        <img src="asstes/img/h1-img-6 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery  -->
+
+    <!-- count  -->
+    <section class="bg-primary" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                <div class="p-3 text-center text-white">
+                    <h2 class="mb-0" style="font-size: 80px;">22</h2>
+                    <p class="mb-0" style="font-size: 30px;">Health Section</p>
+                </div>
+                <div class="p-3 text-center text-white">
+                    <h2 class="mb-0" style="font-size: 80px;">146</h2>
+                    <p class="mb-0" style="font-size: 30px;">Different Services</p>
+                </div>
+                <div class="p-3 text-center text-white">
+                    <h2 class="mb-0" style="font-size: 80px;">400</h2>
+                    <p class="mb-0" style="font-size: 30px;">Blood Donations</p>
+                </div>
+                <div class="p-3 text-center text-white">
+                    <h2 class="mb-0" style="font-size: 80px;">1300</h2>
+                    <p class="mb-0" style="font-size: 30px;">Satisfied Patients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- count  -->
+
+    <section class="py-5">
+        <img src="asstes/img/1694082199587 1.png" class="img-fluid" style="width: 100%;" alt="">
+    </section>
+
+    <!-- footer  -->
+    <footer class="py-5 text-white" style="background-color: #202942;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="p-3">
+                    <a href="#">
+                        <img src="asstes/img/Group 233.png" alt="">
+                    </a>
+                    <p class="text-secondary mt-3" style="font-size: 15px;">Great doctor if you need your
+                        family member to get effective
+                        immediate assistance, emergency
+                        treatment or a simple consultation.</p>
+                </div>
+                <div class="p-3">
+                    <h2 style="font-size: 20px;" class="mb-4">Company</h2>
+                    <ul style="font-size: 11px;">
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">About Us</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Services</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"> Team</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Project</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Blog</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h2 style="font-size: 20px;" class="mb-4">Company</h2>
+                    <ul style="font-size: 11px;">
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">About Us</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Services</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"> Team</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Project</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Blog</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-3">
+                    <h2 style="font-size: 20px;" class="mb-4">Contact us</h2>
+                    <ul style="font-size: 11px;">
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-regular fa-envelope me-2"></i> lifecare@gmail.com</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-phone me-2"></i> +152 534-468-854</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"> <i class="fa-solid fa-phone me-2"></i> +152 534-468-854</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-solid fa-location-dot me-2"></i> View on Google map</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                            <a href="#" class="text-secondary"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-3" style="border-top: 2px solid rgb(116, 116, 116);">
+                <ul class="d-flex justify-content-end">
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="text-secondary" style="font-size: 15px;">Contact</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+
+
+
+    <script src="asstes/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
